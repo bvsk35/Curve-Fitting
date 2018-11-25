@@ -13,9 +13,10 @@ import numpy
 X = numpy.random.uniform(0, 1, (300, 1))
 V = numpy.random.uniform(-0.1, 0.1, (300, 1))
 D = numpy.array([])
-for i in range(0, 300):
-    d = numpy.sin(20 * X[i]) + 3 * X[i] + V[i]
-    D = numpy.concatenate((D, d), axis=0)
+# for i in range(0, 300):
+#     d = numpy.sin(20 * X[i]) + 3 * X[i] + V[i]
+#     D = numpy.concatenate((D, d), axis=0)
+D = numpy.sin(20 * X) + 3 * X + V
 x = numpy.ones((300, 1))
 X_Prime = numpy.concatenate((x, X), axis=1)
 
