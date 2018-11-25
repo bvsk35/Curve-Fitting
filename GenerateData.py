@@ -31,7 +31,7 @@ W_Layer_3 = numpy.random.normal(0, 1.0, (1, 25)) # Xavier Initialisation
 # W_Layer_3 = numpy.random.normal(-5, 5, (1, 25))
 
 # Save everything in text file
-# numpy.savetxt('X.txt', X)
-# numpy.savetxt('D.txt', D)
+numpy.savetxt('X.txt', X)
+numpy.savetxt('D.txt', D)
 numpy.savetxt('Layer2WeightsInitialGuess.txt', W_Layer_2)
 numpy.savetxt('Layer3WeightsInitialGuess.txt', W_Layer_3)
