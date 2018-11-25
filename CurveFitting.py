@@ -31,7 +31,7 @@ def ForwardPass(x, W_Layer_2, W_Layer_3):
     temp_x = numpy.concatenate(([1], [x]), axis=0)
     V2 = numpy.dot(W_Layer_2, temp_x)
     Y2 = numpy.tanh(V2)
-    	
+    temp_y = numpy.concatenate(([1], [Y2]), axis=0)	
     V3 = numpy.dot(W_Layer_3, temp_y)
     Y3 = V3
     return V2, V3, Y2, Y3
